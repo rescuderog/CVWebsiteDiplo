@@ -1,0 +1,158 @@
+/* I'm using Normalize.css to help me tidy up the margin and some quirks of some browser. The rest of the margin management I'm doing it manually */
+
+.centered {
+    text-align: center;
+}
+
+/*this is a class used to keep the header and nav fixed on top*/
+.top-fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+
+body {
+    background-color: rgb(43, 42, 42);
+    /* this will be the global and main font of the design */
+    font-family: 'Inconsolata', monospace;
+    color: white;
+}
+
+
+
+header {
+    border-bottom: 1px solid gray;
+    text-align: center;
+    background-color: rgb(102, 102, 102);
+    padding-bottom: 0.5rem;
+}
+
+header h1 {
+    padding-bottom: 1rem;
+    margin: 0;
+}
+
+nav {
+    background-color: rgb(102, 102, 102);
+    text-align: center;
+}
+
+p {
+    margin: 0;
+}
+
+/* vertical nav on medium sized devices, inspired by an W3Schools example */
+
+@media (max-width: 40rem) {
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        background-color: #f1f1f1;
+      }
+      
+      nav li a {
+        display: block;
+        color: #000;
+        padding: 8px 16px;
+        text-decoration: none;
+      }
+      
+      /* Change the link color on hover */
+      nav li a:hover {
+        background-color: #555;
+        color: white;
+      }
+
+
+    /*first element after the navbar, i'm using the padding to show the content properly after the fixed navbar*/
+    #about {
+        padding-top: 250px;
+    }
+
+}
+
+/* horizontal nav for larger sized devices, inspired by an W3Schools examples, but slightly modified to fit a centered navbar */
+
+@media (min-width: 40rem) {
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        background-color: #f1f1f1;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    nav li {
+        display: inline;
+    }
+
+    nav li a {
+        display: inline-block;
+        color: #000;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    nav li a:hover {
+        background-color: #555;
+        color: white;
+    }
+    
+    /*first element after the navbar, i'm using the padding to show the content properly after the fixed navbar*/
+    #about {
+        padding-top: 150px;
+    }
+
+}
+
+
+section {
+    background-color: rgb(66, 60, 60);
+    text-align: center;
+    padding-bottom: 2rem;
+} 
+
+section ul {
+    margin-top: 1rem;
+    list-style-type: none;
+}
+
+section h2 {
+    margin: 0;
+}
+
+article {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+
+
+/* changing the color of the a element due to the background color of the other elements */
+
+article a {
+    color: aliceblue;
+}
+
+article a:visited {
+    color: beige;
+}
+
+footer {
+    background-color: rgb(102, 102, 102);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
