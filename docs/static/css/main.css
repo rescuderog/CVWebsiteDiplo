@@ -11,6 +11,10 @@
     width: 100%;
 }
 
+.align-right {
+    text-align: right;
+}
+
 
 
 body {
